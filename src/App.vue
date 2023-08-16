@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <h1>Hello World</h1>
+    <h1>Maybe i'm not using talwind</h1>
   </div>
 </template>
 
