@@ -1,6 +1,9 @@
-<script setup></script>
+<script setup>
+import Navbar from "./components/Navbar.vue";
+</script>
 
 <template>
+  <Navbar />
   <div>
     <h1 class="title">Maybe i'm not using talwind</h1>
   </div>
