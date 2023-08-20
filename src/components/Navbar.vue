@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar bg-base-100">
+  <div class="navbar bg-emerald-500 text-white lg:px-20 sm:px-4">
     <div class="navbar-start">
       <div class="dropdown">
         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -20,39 +20,80 @@
         </label>
         <ul
           tabindex="0"
-          class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-emerald-500 rounded-box w-52"
         >
-          <li><a>Profil</a></li>
-          <li>
-            <a>Parent</a>
-            <ul class="p-2">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
-            </ul>
+          <li tabindex="0">
+            <details>
+              <summary class="font-semibold">PROFIL</summary>
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
+            </details>
           </li>
-          <li><a>Item 3</a></li>
+          <li tabindex="0">
+            <details>
+              <summary class="font-semibold">INFORMASI</summary>
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
+            </details>
+          </li>
+          <li tabindex="0">
+            <details>
+              <summary class="font-semibold">KONTAK</summary>
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
+            </details>
+          </li>
         </ul>
       </div>
-      <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+
+      <span class="flex justify-center items-center font-bold text-xl"
+        ><img src="../assets/upp.png" alt="logo" class="w-12" />Universitas Pat
+        Petulai</span
+      >
     </div>
-    <div class="navbar-center hidden lg:flex">
-      <ul class="menu menu-horizontal px-1">
-        <li><a>Item 1</a></li>
+
+    <div class="navbar-end hidden lg:flex">
+      <ul class="menu menu-horizontal px-1 flex gap-10">
         <li tabindex="0">
           <details>
-            <summary>Parent</summary>
-            <ul class="p-2">
+            <summary class="font-semibold">PROFIL</summary>
+            <ul class="p-2 bg-emerald-500">
               <li><a>Submenu 1</a></li>
               <li><a>Submenu 2</a></li>
             </ul>
           </details>
         </li>
-        <li><a>Item 3</a></li>
+        <li tabindex="1">
+          <details>
+            <summary class="font-semibold">INFORMASI</summary>
+            <ul class="p-2 bg-emerald-500">
+              <li><a>Submenu 1</a></li>
+              <li><a>Submenu 2</a></li>
+            </ul>
+          </details>
+        </li>
+        <li tabindex="2">
+          <details>
+            <summary class="font-semibold">KONTAK</summary>
+            <ul class="p-2 bg-emerald-500">
+              <li><a>Submenu 1</a></li>
+              <li><a>Submenu 2</a></li>
+            </ul>
+          </details>
+        </li>
       </ul>
     </div>
-    <div class="navbar-end">
-      <a class="btn">Button</a>
-    </div>
+
+    <!-- <div class="navbar-end flex gap-2">
+      <a class="btn font-bold">Login</a>
+      <a class="btn font-bold bg-slate-100">Register</a>
+    </div> -->
   </div>
 </template>
 
