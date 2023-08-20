@@ -58,14 +58,18 @@
       >
     </div>
 
-    <div class="navbar-end hidden lg:flex">
+    <div class="navbar-end hidden lg:flex navbar-desktop">
       <ul class="menu menu-horizontal px-1 flex gap-10">
+        <li tabindex="0">
+          <summary class="font-semibold">BERANDA</summary>
+        </li>
         <li tabindex="0">
           <details>
             <summary class="font-semibold">PROFIL</summary>
             <ul class="p-2 bg-emerald-500">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
+              <li><a>Sejarah</a></li>
+              <li><a>Visi Misi</a></li>
+              <li><a>Dosen</a></li>
             </ul>
           </details>
         </li>
@@ -73,19 +77,24 @@
           <details>
             <summary class="font-semibold">INFORMASI</summary>
             <ul class="p-2 bg-emerald-500">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
+              <li><a>Berita</a></li>
+              <li><a>Beasiswa</a></li>
+            </ul>
+          </details>
+        </li>
+        <li tabindex="3">
+          <details>
+            <summary class="font-semibold">AKADEMIK</summary>
+            <ul class="p-2 bg-emerald-500">
+              <li><a>RPS</a></li>
+              <li><a>Jadwal Kuliah</a></li>
+              <li><a>Matakuliah Kuliah</a></li>
+              <li><a>Jumblah Mahasiswa</a></li>
             </ul>
           </details>
         </li>
         <li tabindex="2">
-          <details>
-            <summary class="font-semibold">KONTAK</summary>
-            <ul class="p-2 bg-emerald-500">
-              <li><a>Submenu 1</a></li>
-              <li><a>Submenu 2</a></li>
-            </ul>
-          </details>
+          <summary class="font-semibold">KONTAK</summary>
         </li>
       </ul>
     </div>
@@ -97,4 +106,8 @@
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.navbar-desktop {
+  z-index: 999;
+}
+</style>

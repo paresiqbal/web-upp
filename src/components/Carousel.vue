@@ -1,5 +1,63 @@
-<script setup></script>
+<script>
+import { register } from "swiper/element/bundle";
 
-<template></template>
+register();
 
-<style scoped></style>
+export default {
+  setup() {
+    const spaceBetween = 10;
+    const onProgress = (e) => {
+      const [swiper, progress] = e.detail;
+      console.log(progress);
+    };
+
+    const onSlideChange = (e) => {
+      console.log("slide changed");
+    };
+
+    return {
+      spaceBetween,
+      onProgress,
+      onSlideChange,
+    };
+  },
+};
+</script>
+
+<template>
+  <div>
+    <swiper-container
+      :slides-per-view="3"
+      :space-between="spaceBetween"
+      :centered-slides="true"
+      :pagination="{
+        hideOnClick: true,
+      }"
+      :breakpoints="{
+        768: {
+          slidesPerView: 1,
+        },
+      }"
+      @progress="onProgress"
+      @slidechange="onSlideChange"
+    >
+      <swiper-slide class="swiper"
+        ><img src="../assets/carousel/image1.jpg" alt=""
+      /></swiper-slide>
+      <swiper-slide
+        ><img src="../assets/carousel/image2.jpg" alt=""
+      /></swiper-slide>
+      <swiper-slide
+        ><img src="../assets/carousel/image3.jpg" alt=""
+      /></swiper-slide>
+    </swiper-container>
+  </div>
+</template>
+
+<style scoped>
+.swiper-container {
+  width: 1500px;
+  height: 800px;
+  object-position: center;
+}
+</style>
