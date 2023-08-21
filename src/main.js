@@ -12,6 +12,8 @@ import VisiMisi from "./views/VisiMisi.vue";
 import Dosen from "./views/Dosen.vue";
 import Berita from "./components/Berita.vue";
 import Beasiswa from "./views/Beasiswa.vue";
+import Rps from "./views/Rps.vue";
+import Jadwal from "./views/Jadwal.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -45,6 +47,16 @@ const router = createRouter({
       path: "/beasiswa",
       name: "Beasiswa",
       component: Beasiswa,
+    },
+    {
+      path: "/rps",
+      name: "Rps",
+      component: Rps,
+    },
+    {
+      path: "/jadwal",
+      name: "Jadwal",
+      component: Jadwal,
     },
   ],
 });

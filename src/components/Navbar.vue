@@ -87,10 +87,10 @@
           <details>
             <summary class="font-semibold">AKADEMIK</summary>
             <ul class="p-2 bg-emerald-500">
-              <li><a>RPS</a></li>
-              <li><a>Jadwal Kuliah</a></li>
-              <li><a>Matakuliah Kuliah</a></li>
-              <li><a>Jumblah Mahasiswa</a></li>
+              <li><a href="/rps">RPS</a></li>
+              <li><a href="/jadwal">Jadwal Kuliah</a></li>
+              <li><a href="/">Matakuliah Kuliah</a></li>
+              <li><a href="/">Jumblah Mahasiswa</a></li>
             </ul>
           </details>
         </li>
