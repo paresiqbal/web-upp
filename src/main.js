@@ -15,6 +15,7 @@ import Beasiswa from "./views/Beasiswa.vue";
 import Rps from "./views/Rps.vue";
 import Jadwal from "./views/Jadwal.vue";
 import Matakuliah from "./views/Matakuliah.vue";
+import Mahasiswa from "./views/Mahasiswa.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -63,6 +64,11 @@ const router = createRouter({
       path: "/matakuliah",
       name: Matakuliah,
       component: Matakuliah,
+    },
+    {
+      path: "/mahasiswa",
+      name: Mahasiswa,
+      component: Mahasiswa,
     },
   ],
 });

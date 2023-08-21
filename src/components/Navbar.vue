@@ -90,7 +90,7 @@
               <li><a href="/rps">RPS</a></li>
               <li><a href="/jadwal">Jadwal Kuliah</a></li>
               <li><a href="/matakuliah">Matakuliah Kuliah</a></li>
-              <li><a href="/">Jumblah Mahasiswa</a></li>
+              <li><a href="/mahasiswa">Jumblah Mahasiswa</a></li>
             </ul>
           </details>
         </li>
