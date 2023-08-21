@@ -7,7 +7,7 @@ import Home from "./views/Home.vue";
 <template>
   <Topbar />
   <Navbar />
-  <Home />
+  <router-view></router-view>
 </template>
 
 <style scoped></style>

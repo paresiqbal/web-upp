@@ -61,13 +61,13 @@
     <div class="navbar-end hidden lg:flex navbar-desktop">
       <ul class="menu menu-horizontal px-1 flex gap-10">
         <li tabindex="0">
-          <summary class="font-semibold">BERANDA</summary>
+          <summary class="font-semibold"><a href="/">BERANDA</a></summary>
         </li>
         <li tabindex="0">
           <details>
             <summary class="font-semibold">PROFIL</summary>
             <ul class="p-2 bg-emerald-500">
-              <li><a>Sejarah</a></li>
+              <li><a href="/sejarah">Sejarah</a></li>
               <li><a>Visi Misi</a></li>
               <li><a>Dosen</a></li>
             </ul>
