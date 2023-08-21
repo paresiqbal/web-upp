@@ -53,8 +53,9 @@
       </div>
 
       <span class="flex justify-center items-center font-bold text-xl"
-        ><img src="../assets/upp.png" alt="logo" class="w-12" />Universitas Pat
-        Petulai</span
+        ><img src="../assets/upp.png" alt="logo" class="w-12" /><a href="/"
+          >Universitas Pat Petulai</a
+        ></span
       >
     </div>
 
