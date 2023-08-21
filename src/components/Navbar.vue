@@ -78,8 +78,8 @@
           <details>
             <summary class="font-semibold">INFORMASI</summary>
             <ul class="p-2 bg-emerald-500">
-              <li><a>Berita</a></li>
-              <li><a>Beasiswa</a></li>
+              <li><a href="/berita">Berita</a></li>
+              <li><a href="/beasiswa">Beasiswa</a></li>
             </ul>
           </details>
         </li>
