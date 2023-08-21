@@ -23,11 +23,15 @@
           class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-emerald-500 rounded-box w-52"
         >
           <li tabindex="0">
+            <summary class="font-semibold"><a href="/">BERANDA</a></summary>
+          </li>
+          <li tabindex="0">
             <details>
               <summary class="font-semibold">PROFIL</summary>
               <ul class="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
+                <li><a href="/sejarah">Sejarah</a></li>
+                <li><a href="/visimisi">Visi Misi</a></li>
+                <li><a href="/dosen">Dosen</a></li>
               </ul>
             </details>
           </li>
@@ -35,19 +39,26 @@
             <details>
               <summary class="font-semibold">INFORMASI</summary>
               <ul class="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
+                <li><a href="/berita">Berita</a></li>
+                <li><a href="/beasiswa">Beasiswa</a></li>
               </ul>
             </details>
           </li>
           <li tabindex="0">
             <details>
-              <summary class="font-semibold">KONTAK</summary>
+              <summary class="font-semibold">AKADEMIK</summary>
               <ul class="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
+                <li><a href="/rps">RPS</a></li>
+                <li><a href="/jadwal">Jadwal Kuliah</a></li>
+                <li><a href="/matakuliah">Matakuliah Kuliah</a></li>
+                <li><a href="/mahasiswa">Jumblah Mahasiswa</a></li>
               </ul>
             </details>
+          </li>
+          <li tabindex="0">
+            <summary class="font-semibold">
+              <a href="/kontak">KONTAK</a>
+            </summary>
           </li>
         </ul>
       </div>
