@@ -89,7 +89,7 @@
             <ul class="p-2 bg-emerald-500">
               <li><a href="/rps">RPS</a></li>
               <li><a href="/jadwal">Jadwal Kuliah</a></li>
-              <li><a href="/">Matakuliah Kuliah</a></li>
+              <li><a href="/matakuliah">Matakuliah Kuliah</a></li>
               <li><a href="/">Jumblah Mahasiswa</a></li>
             </ul>
           </details>
