@@ -95,7 +95,7 @@
           </details>
         </li>
         <li tabindex="2">
-          <summary class="font-semibold">KONTAK</summary>
+          <summary class="font-semibold"><a href="/kontak">KONTAK</a></summary>
         </li>
       </ul>
     </div>

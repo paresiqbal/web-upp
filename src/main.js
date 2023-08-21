@@ -16,6 +16,7 @@ import Rps from "./views/Rps.vue";
 import Jadwal from "./views/Jadwal.vue";
 import Matakuliah from "./views/Matakuliah.vue";
 import Mahasiswa from "./views/Mahasiswa.vue";
+import Kontak from "./views/Kontak.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -69,6 +70,11 @@ const router = createRouter({
       path: "/mahasiswa",
       name: Mahasiswa,
       component: Mahasiswa,
+    },
+    {
+      path: "/kontak",
+      name: "Kontak",
+      component: Kontak,
     },
   ],
 });
