@@ -9,6 +9,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "./views/Home.vue";
 import Sejarah from "./views/Sejarah.vue";
 import VisiMisi from "./views/VisiMisi.vue";
+import Dosen from "./views/Dosen.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -27,6 +28,11 @@ const router = createRouter({
       path: "/visimisi",
       name: "Visi Misi",
       component: VisiMisi,
+    },
+    {
+      path: "/dosen",
+      name: "Dosen",
+      component: Dosen,
     },
   ],
 });

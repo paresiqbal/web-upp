@@ -70,7 +70,7 @@
             <ul class="p-2 bg-emerald-500">
               <li><a href="/sejarah">Sejarah</a></li>
               <li><a href="/visimisi">Visi Misi</a></li>
-              <li><a>Dosen</a></li>
+              <li><a href="/dosen">Dosen</a></li>
             </ul>
           </details>
         </li>
