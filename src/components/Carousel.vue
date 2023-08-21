@@ -27,7 +27,7 @@ export default {
 <template>
   <div>
     <swiper-container
-      :slides-per-view="3"
+      :slides-per-view="1"
       :space-between="spaceBetween"
       :centered-slides="true"
       :pagination="{
@@ -42,22 +42,25 @@ export default {
       @slidechange="onSlideChange"
     >
       <swiper-slide class="swiper"
-        ><img src="../assets/carousel/image1.jpg" alt=""
+        ><img
+          src="../assets/carousel/image1.jpg"
+          alt="carousel"
+          class="carousel-img"
       /></swiper-slide>
       <swiper-slide
-        ><img src="../assets/carousel/image2.jpg" alt=""
+        ><img
+          src="../assets/carousel/image2.jpg"
+          alt="carousel"
+          class="carousel-img"
       /></swiper-slide>
       <swiper-slide
-        ><img src="../assets/carousel/image3.jpg" alt=""
+        ><img
+          src="../assets/carousel/image3.jpg"
+          alt="carousel"
+          class="carousel-img"
       /></swiper-slide>
     </swiper-container>
   </div>
 </template>
 
-<style scoped>
-.swiper-container {
-  width: 1500px;
-  height: 800px;
-  object-position: center;
-}
-</style>
+<style scoped></style>
