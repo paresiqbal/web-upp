@@ -17,7 +17,7 @@
           />
         </figure>
         <div class="card-body max-w-md">
-          <h2 class="card-title">Pemrograman</h2>
+          <h2 class="card-title font-bold">Pemrograman</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, qui
             eaque possimus velit eius laborum deleniti illum totam corporis
@@ -43,7 +43,7 @@
           />
         </figure>
         <div class="card-body max-w-md">
-          <h2 class="card-title">Jaringan</h2>
+          <h2 class="card-title font-bold">Jaringan</h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, qui
             eaque possimus velit eius laborum deleniti illum totam corporis
