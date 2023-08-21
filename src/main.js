@@ -8,6 +8,7 @@ import { createRouter, createWebHistory } from "vue-router";
 // route
 import Home from "./views/Home.vue";
 import Sejarah from "./views/Sejarah.vue";
+import VisiMisi from "./views/VisiMisi.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -21,6 +22,11 @@ const router = createRouter({
       path: "/sejarah",
       name: "Sejarah",
       component: Sejarah,
+    },
+    {
+      path: "/visimisi",
+      name: "Visi Misi",
+      component: VisiMisi,
     },
   ],
 });
