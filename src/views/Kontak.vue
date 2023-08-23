@@ -7,7 +7,7 @@
     </h1>
     <img src="../assets/image/map.png" alt="" />
     <div class="text-center flex gap-10 text-xl font-bold justify-between">
-      <h2>Alamat</h2>
+      <h2>Alamat:</h2>
       <h2>No Telp</h2>
       <h2>Email</h2>
     </div>
