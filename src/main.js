@@ -18,6 +18,7 @@ import Matakuliah from "./views/Matakuliah.vue";
 import Mahasiswa from "./views/Mahasiswa.vue";
 import Kontak from "./views/Kontak.vue";
 import Login from "./views/Login.vue";
+import CreateBerita from "./views/CreateBerita.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -81,6 +82,11 @@ const router = createRouter({
       path: "/login",
       name: "Login",
       component: Login,
+    },
+    {
+      path: "/createberita",
+      name: "CreateBerita",
+      component: CreateBerita,
     },
   ],
 });
