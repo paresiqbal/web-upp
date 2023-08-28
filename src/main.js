@@ -17,6 +17,7 @@ import Jadwal from "./views/Jadwal.vue";
 import Matakuliah from "./views/Matakuliah.vue";
 import Mahasiswa from "./views/Mahasiswa.vue";
 import Kontak from "./views/Kontak.vue";
+import Login from "./views/Login.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -75,6 +76,11 @@ const router = createRouter({
       path: "/kontak",
       name: "Kontak",
       component: Kontak,
+    },
+    {
+      path: "/login",
+      name: "Login",
+      component: Login,
     },
   ],
 });
