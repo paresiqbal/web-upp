@@ -3,7 +3,7 @@
     Gallery
   </h1>
   <div class="flex items-center justify-center mx-20">
-    <div class="carousel w-3/4">
+    <div class="carousel w-4/6">
       <div id="slide1" class="carousel-item relative w-full">
         <img src="../assets/carousel/image1.jpg" class="w-full rounded-md" />
         <div
