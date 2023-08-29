@@ -1,25 +1,71 @@
+<script setup>
+// Icon
+import {
+  PhoneIcon,
+  EnvelopeIcon,
+  InboxIcon,
+  ChevronRightIcon,
+} from "@heroicons/vue/24/solid";
+</script>
+
 <template>
   <div class="pt-10">
-    <footer class="footer p-10 bg-emerald-500 text-white px-20">
-      <div>
-        <span class="footer-title">Services</span>
-        <a class="link link-hover">Branding</a>
-        <a class="link link-hover">Design</a>
-        <a class="link link-hover">Marketing</a>
-        <a class="link link-hover">Advertisement</a>
+    <footer
+      class="footer p-10 bg-emerald-500 text-white text-base font-semibold px-36 flex justify-between items-center"
+    >
+      <div class="max-w-sm">
+        <span class="flex items-center text-2xl font-bold"
+          ><img src="../assets/upp.png" alt="logo" class="w-20" />Universitas
+          Pat Petulai</span
+        >
+        <a class=""
+          >Alamat Jl. Basuki Rahmat No.13, Dwi Tunggal, Kec. Curup, Kabupaten
+          Rejang Lebong, Bengkulu 39119</a
+        >
+        <div class="pt-8 flex flex-col gap-4">
+          <span class="flex gap-2 items-center"
+            ><PhoneIcon class="w-6" />(0274) 884201 - 207</span
+          >
+          <span class="flex gap-2 items-center"
+            ><EnvelopeIcon class="w-6" />upp@gmail.com</span
+          >
+          <span class="flex gap-2 items-center"
+            ><InboxIcon class="w-6" />6969</span
+          >
+        </div>
       </div>
-      <div>
-        <span class="footer-title">Company</span>
-        <a class="link link-hover">About us</a>
-        <a class="link link-hover">Contact</a>
-        <a class="link link-hover">Jobs</a>
-        <a class="link link-hover">Press kit</a>
+      <div class="flex flex-col gap-2">
+        <span class="font-bold">AKADEMIK</span>
+        <span class="flex gap-2"
+          ><ChevronRightIcon class="w-6" />PMB (Pendaftaran)</span
+        >
+        <span class="flex gap-2"
+          ><ChevronRightIcon class="w-6" />Info Akademik</span
+        >
+        <span class="flex gap-2"
+          ><ChevronRightIcon class="w-6" />Info Keuangan</span
+        >
+        <span class="flex gap-2"
+          ><ChevronRightIcon class="w-6" />Info Kemahasiswaan</span
+        >
       </div>
-      <div>
-        <span class="footer-title">Legal</span>
-        <a class="link link-hover">Terms of use</a>
-        <a class="link link-hover">Privacy policy</a>
-        <a class="link link-hover">Cookie policy</a>
+      <div class="flex flex-col gap-2">
+        <span class="font-bold">DEPARTMENT</span>
+        <span class="flex gap-2"
+          ><ChevronRightIcon class="w-6" />Direktorat Administrasi Akademik
+          (DAAK)</span
+        >
+        <span class="flex gap-2"
+          ><ChevronRightIcon class="w-6" />Direktorat Perencanaan dan Keuangan
+          (DPK)</span
+        >
+        <span class="flex gap-2"
+          ><ChevronRightIcon class="w-6" />Direktorat Kemahasiswaan</span
+        >
+        <span class="flex gap-2"
+          ><ChevronRightIcon class="w-6" />Direktorat Innovation Center
+          (IC)</span
+        >
       </div>
     </footer>
     <footer class="footer px-20 py-4 bg-emerald-600 text-white border-base-300">
