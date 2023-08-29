@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar bg-emerald-500 text-white lg:px-20 sm:px-4">
+  <div class="navbar bg-emerald-500 text-white lg:px-36 sm:px-4">
     <div class="navbar-start">
       <div class="dropdown">
         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -71,7 +71,7 @@
     </div>
 
     <div class="navbar-end hidden lg:flex navbar-desktop">
-      <ul class="menu menu-horizontal px-1 flex gap-10">
+      <ul class="menu menu-horizontal px-1 flex gap-2">
         <li tabindex="0">
           <summary class="font-semibold"><a href="/">BERANDA</a></summary>
         </li>
