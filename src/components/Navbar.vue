@@ -108,6 +108,11 @@
         <li tabindex="2">
           <summary class="font-semibold"><a href="/kontak">KONTAK</a></summary>
         </li>
+        <li tabindex="2">
+          <summary class="font-semibold">
+            <a @click="handleLogOut" v-if="isLoggedIn">Logout</a>
+          </summary>
+        </li>
       </ul>
     </div>
 
@@ -117,6 +122,33 @@
     </div> -->
   </div>
 </template>
+
+<script setup>
+import { onMounted, ref } from "vue";
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+import { useRouter } from "vue-router";
+
+const isLoggedIn = ref(false);
+const router = useRouter();
+
+let auth;
+onMounted(() => {
+  auth = getAuth();
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      isLoggedIn.value = true;
+    } else {
+      isLoggedIn.value = false;
+    }
+  });
+});
+
+const handleLogOut = () => {
+  signOut(auth).then(() => {
+    router.push("/");
+  });
+};
+</script>
 
 <style scoped>
 .navbar-desktop {

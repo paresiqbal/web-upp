@@ -1,7 +1,4 @@
 <script setup>
-// Incons
-import { ArrowRightCircleIcon } from "@heroicons/vue/24/solid";
-
 // Vue
 import { ref } from "vue";
 import { useRouter } from "vue-router";
@@ -18,7 +15,8 @@ const register = () => {
   createUserWithEmailAndPassword(getAuth(), email.value, password.value)
     .then((data) => {
       console.log("Successfully Register");
-      router.push("/"); // redirect after register
+      console.log(auth.currentUser);
+      router.push({ name: "Home" }); // redirect after register
     })
     .catch((error) => {
       console.log(error.code);
@@ -31,32 +29,41 @@ const signInWithGoogle = () => {};
 </script>
 
 <template>
-  <div class="mx-20 py-10">
-    <h1 class="text-5xl font-bold text-amber-500 underline text-center pb-8">
-      Register
-    </h1>
-    <div
-      class="flex flex-col justify-center items-center py-10 border-2 rounded-md"
-    >
-      <h2 class="text-3xl py-4 font-bold">Universitas Pat Petulai</h2>
-      <div class="flex flex-col">
-        <div class="flex flex-col gap-2">
-          <label for="username">Username</label>
-          <input type="text" name="username" class="border-2 rounded-md" />
-        </div>
-        <div class="flex flex-col gap-2">
-          <label for="password">Password</label>
-          <input type="password" name="password" class="border-2 rounded-md" />
-        </div>
+  <div class="flex justify-center items-center mx-20 py-10">
+    <form class="border-2 px-20 py-8 rounded-md shadow-sm text-lg">
+      <h1 class="text-4xl font-bold pb-10">Register</h1>
+      <div class="flex flex-col gap-2">
+        <label for="email" aria-label="email">Email:</label>
+        <input
+          type="text"
+          name="email"
+          v-model="email"
+          class="border-2 active:border-emerald-500 rounded-md"
+        />
       </div>
-      <span class="pt-10 pb-4">Or</span>
-      <div
-        class="py-2 px-8 bg-slate-400 rounded-md hover:bg-slate-200 cursor-pointer"
-      >
-        <span class="flex justify-center items-center gap-2 font-bold"
-          ><ArrowRightCircleIcon class="w-10" />Register with google</span
+      <div class="flex flex-col gap-2">
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          name="password"
+          v-model="password"
+          class="border-2 active:border-emerald-500 rounded-md"
+        />
+      </div>
+      <div class="flex gap-5 mt-4 justify-between">
+        <button
+          @click="register"
+          class="bg-emerald-500 px-4 py-2 rounded-md font-bold text-white"
         >
+          Register
+        </button>
+        <button
+          @click="signInWithGoogle"
+          class="bg-yellow-500 px-4 py-2 rounded-md font-bold text-white"
+        >
+          Sign In With Google
+        </button>
       </div>
-    </div>
+    </form>
   </div>
 </template>
