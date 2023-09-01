@@ -19,9 +19,11 @@ import Mahasiswa from "./views/Mahasiswa.vue";
 import Kontak from "./views/Kontak.vue";
 import Login from "./views/Login.vue";
 import CreateBerita from "./views/CreateBerita.vue";
+import Register from "./views/Register.vue";
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -100,6 +102,11 @@ const router = createRouter({
       path: "/login",
       name: "Login",
       component: Login,
+    },
+    {
+      path: "/register",
+      name: "Register",
+      component: Register,
     },
     {
       path: "/createberita",
