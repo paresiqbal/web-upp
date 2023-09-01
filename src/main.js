@@ -20,6 +20,24 @@ import Kontak from "./views/Kontak.vue";
 import Login from "./views/Login.vue";
 import CreateBerita from "./views/CreateBerita.vue";
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAjvZreOK93bzLVHXue8pi7hrjgqljJYK0",
+  authDomain: "web-upp.firebaseapp.com",
+  projectId: "web-upp",
+  storageBucket: "web-upp.appspot.com",
+  messagingSenderId: "356733073673",
+  appId: "1:356733073673:web:a754da9f24bf4700adbbd8",
+};
+
+// Initialize Firebase
+initializeApp(firebaseConfig);
+
 const router = createRouter({
   history: createWebHistory(),
   routes: [
