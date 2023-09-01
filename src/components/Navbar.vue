@@ -110,7 +110,7 @@
         </li>
         <li tabindex="2">
           <summary class="font-semibold">
-            <a @click="handleLogOut" v-if="isLoggedIn">Logout</a>
+            <a @click="handleLogOut">Logout</a>
           </summary>
         </li>
       </ul>

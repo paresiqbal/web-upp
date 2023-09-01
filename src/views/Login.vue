@@ -11,7 +11,7 @@ const password = ref("");
 const router = useRouter();
 
 // normal register
-const register = () => {
+const register = (data) => {
   signInWithEmailAndPassword(getAuth(), email.value, password.value)
     .then((data) => {
       console.log("Successfully Sign in");
