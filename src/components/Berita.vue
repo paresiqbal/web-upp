@@ -4,21 +4,19 @@ import { ref } from "vue";
 const cardData = [
   {
     date: "17 Agustus 2023",
-    title: "Lorem, ipsum dolor.",
+    title: "Dandi.",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, deserunt. Ducimus, consectetur.",
   },
   {
     date: "18 Agustus 2023",
     title: "Lorem, ipsum dolor.",
-    content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, deserunt. Ducimus, consectetur.",
+    content: "Lorem ipsum dolor . Nemo, deserunt. Ducimus, consectetur.",
   },
   {
     date: "19 Agustus 2023",
     title: "Lorem, ipsum dolor.",
-    content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, deserunt. Ducimus, consectetur.",
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. .",
   },
   // Add more card data objects here if needed
 ];
